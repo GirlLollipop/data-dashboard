@@ -6,8 +6,8 @@
   <!-- enlazando el mismo css -->
   <link rel="stylesheet" href="../../css/main.css">
   <!-- Añadiendo libreria char.js para hacer gráficas -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
-  <title>LIM</title>
+  <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
 </head>
 
 <body>
@@ -18,22 +18,33 @@
        <img src="../../assets/images/logo-laboratoria.svg">
       </div>
     </header>
-    <div class="home">
-      <a href="../../index.html"> <img src="../../assets/images/lab-iso.png" alt="HOME"></a>
-    </div>
+
+      </div>
     <nav id="menu" class="menu_sedes">
+      <div class="home">
+        <a href="../../index.html" title="Home"> <img src="../../assets/images/lab-iso.png" alt="HOME"></a>
+      </div>
+      <div class="flag">
+        <img src="../../assets/images/aqp-peru-flag.png" title="Lima">
+      </div>
+      </div>
       <div class="estilo_menu_venues">
         <a class="cities" href="../AQP/aqp.html">AQP</a>  |
         <a class="cities" href="../CDMX/cdmx.html">CDMX</a>  |
         <a class="cities" href="../SCL/scl.html">SCL</a>  |
-        <a class="cities" href="../SCL/scl.html">LIM</a>  |
+        <a class="cities" href="../LIM/lim.html">LIM</a>  |
       </div>
+      <div class="options">
+    <form class="" name="formOptions">
+      <label for="students">Estudiantes</label>
+      <input type="radio" name="options" value="students" id="students" checked>
+      <label for="ratings">Estadisticas</label>
+      <input type="radio" name="options" value="ratings" id="ratings">
+    </form>
      </nav>
-    <section class="sub_nav">
-      <div class="sub_nav_box">
-
-      </div>
-    </section>
+   </div>
+   <div id="charts">
+   </div>
     <!-- enlazando la data -->
     <script type="text/javascript" src="../../js/data.js"></script>
     <!-- enlazando el JS principal, para poder llamar sus funciones en caso de ser necesario -->

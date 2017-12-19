@@ -15,17 +15,25 @@
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses', 'Profit'],
-          ['2014', 1000, 400, 200],
-          ['2015', 1170, 460, 250],
-          ['2016', 660, 1120, 300],
-          ['2017', 1030, 540, 350]
+          ['', 'Estudiantes inscritas', 'Desertaron', 'Activas'],
+          ['2016-2 AQP', 15, 7, 8],
+          ['2017-1 AQP', 15, 8, 7],
+          ['2017-1 CDMX', 24, 9, 15],
+          ['2017-2 CDMX', 46, 21, 25],
+          ['2016-2 LIM', 35, 16, 19],
+          ['2017-1 LIM', 17, 12, 5],
+          ['2017-2 LIM', 14, 6, 8],
+          ['2016-2 SCL', 11, 3, 8],
+          ['2017-1 SCL', 23, 14, 9],
+          ['2017-2 SCL', 59, 26, 33]
         ]);
 
         var options = {
           chart: {
-            title: 'Company Performance',
-            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+            title: 'COMPARATIVO GENERAL',
+            subtitle: 'Sedes y generaciones',
+            'width':400,
+              'height':400
           }
         };
 
@@ -39,20 +47,20 @@
 <body>
   <header>
     <div class="logo">
-     <a href="index.html"> <img src="assets/images/logo-laboratoria.svg"> </a>
+     <img src="assets/images/logo-laboratoria.svg">
    </div>
   </header>
   <nav id="menu">
     <div class="estilo_menu_home">
-      <a class="cities" href="views/AQP/aqp.html">AQP</a>  |
-      <a class="cities" href="views/CDMX/cdmx.html">CDMX</a>  |
-      <a class="cities" href="views/SCL/scl.html">SCL</a>  |
-      <a class="cities" href="views/LIM/lim.html">LIM</a>  |
+      <a class="cities" href="views/AQP/aqp.html" title="Arequipa">AQP</a>  |
+      <a class="cities" href="views/CDMX/cdmx.html" title="Ciudad de México">CDMX</a>  |
+      <a class="cities" href="views/SCL/scl.html" title="Santiago de Chile">SCL</a>  |
+      <a class="cities" href="views/LIM/lim.html" title="Lima">LIM</a>  |
     </div>
 
   </nav>
   <section class="chart1">
-    <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
+    <div id="columnchart_material" style="width: 100%; height: 500px;"></div>
   </section>
 
 

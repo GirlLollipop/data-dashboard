@@ -22,6 +22,20 @@ header {
    color: #f7c531;
  }
 
+/* style chart home*/
+ .chart1 {
+  margin: 50px;
+ }
+
+ .flag >img {
+   width: 160px;
+   height: 100px;
+   border-radius: 10px;
+   display: inline-block;
+   margin-bottom: 20px;
+   margin-top: 15px;
+   margin-left: 10px;
+ }
 
  .estilo_menu_home{
    border: 3px solid orange;
@@ -36,17 +50,23 @@ header {
   }
 
 
-  .estilo_menu_venues {}
+  .estilo_menu_venues {
+    margin-left: 5px;
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 
   .menu_sedes{
     border: 3px solid orange;
     border-radius: 8px;
     color: orange;
-    display: inline-block;
     font-family: sans-serif;
     font-size: 22px;
     padding: 15px;
+    width: 21%;
     margin-left: 30px;
+    margin-top: 50px;
    }
 
  .generation {
@@ -64,9 +84,12 @@ header {
     margin-bottom: 20px;
     margin-top: 15px;
     width: 100px;
-    margin-left: 30px;
+    margin-left: 0;
   }
 
+ .home, .flag {
+   display: inline-block;
+ }
 
  .logo{
    height: 10%;
@@ -81,6 +104,6 @@ header {
    width: 200px;
  }
 
-.venues {
- float: left;
+.options {
+  margin-bottom: 15px;
 }
