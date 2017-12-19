@@ -1,17 +1,86 @@
 /*
  * Estilos de tu proyecto
  */
- .menu{
-   text-decoration: none;
+ * {
+   padding: 0;
+   margin: 0;
  }
 
- .estilo_menu:hover{
+a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bolder;
+  text-align: center;
+}
+
+header {
+  background-color: #f7c531;
+}
+
+ a:hover{
    cursor: pointer;
+   color: #f7c531;
  }
 
 
- .estilo_menu{
+ .estilo_menu_home{
+   border: 3px solid orange;
+   border-radius: 8px;
+   color: orange;
    display: inline-block;
-   padding: 10px;
-   border: 1px solid black;
+   font-family: sans-serif;
+   font-size: 22px;
+   margin: 10px;
+   margin-left: 37%;
+   padding: 15px;
+  }
+
+
+  .estilo_menu_venues {}
+
+  .menu_sedes{
+    border: 3px solid orange;
+    border-radius: 8px;
+    color: orange;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 22px;
+    padding: 15px;
+    margin-left: 30px;
+   }
+
+ .generation {
+  color: black;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+
+}
+
+  .home >a >img {
+    border-radius: 5px;
+    display: inline-block;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    width: 100px;
+    margin-left: 30px;
+  }
+
+
+ .logo{
+   height: 10%;
+   width: 20%;
+   text-align: center;
+   margin-left: 38%;
  }
+
+ .logo-home {
+   display: inline-block;
+   height: 100px;
+   width: 200px;
+ }
+
+.venues {
+ float: left;
+}

@@ -7,24 +7,33 @@
   <link rel="stylesheet" href="../../css/main.css">
   <!-- Añadiendo libreria char.js para hacer gráficas -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
-  <title>CDMX</title>
+  <title>LIM</title>
 </head>
 
 <body>
 
   <body>
-    <nav id="menu">
-      <div class="home estilo_menu">
-        aqui iria el logo de laboratoria que te direccionaria a la pagina principal
+    <header>
+      <div class="logo">
+       <img src="../../assets/images/logo-laboratoria.svg">
       </div>
-      <div class="estilo_menu">
-        <a class="cities" href="../AQP/aqp.html">AQP</a>|
-        <a class="cities" href="../CDMX/cdmx.html">CDMX</a>|
-        <a class="cities" href="../SCL/scl.html">SCL</a>|
-        <a class="cities" href="lim.html">LIM</a>|
+    </header>
+    <div class="home">
+      <a href="../../index.html"> <img src="../../assets/images/lab-iso.png" alt="HOME"></a>
+    </div>
+    <nav id="menu" class="menu_sedes">
+      <div class="estilo_menu_venues">
+        <a class="cities" href="../AQP/aqp.html">AQP</a>  |
+        <a class="cities" href="../CDMX/cdmx.html">CDMX</a>  |
+        <a class="cities" href="../SCL/scl.html">SCL</a>  |
+        <a class="cities" href="../SCL/scl.html">LIM</a>  |
       </div>
+     </nav>
+    <section class="sub_nav">
+      <div class="sub_nav_box">
 
-    </nav>
+      </div>
+    </section>
     <!-- enlazando la data -->
     <script type="text/javascript" src="../../js/data.js"></script>
     <!-- enlazando el JS principal, para poder llamar sus funciones en caso de ser necesario -->

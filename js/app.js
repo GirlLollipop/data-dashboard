@@ -1,7 +1,7 @@
 /*
  * Funcionalidad de tu producto
  */
- 
+
 function buildCheckBox(city) {
   var subMenu = document.getElementsByClassName('sub_nav_box');
   var gen = Object.keys(data[city]);
@@ -14,6 +14,7 @@ function buildCheckBox(city) {
     selectores.type = 'checkbox';
     selectores.value = gen[i];
     nameGen.innerHTML = gen[i];
+    contenedorSelectet.className ='generation'
     menu.appendChild(contenedorSelectet);
     contenedorSelectet.appendChild(selectores);
     contenedorSelectet.appendChild(nameGen);
