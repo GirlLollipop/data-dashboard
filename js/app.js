@@ -116,7 +116,8 @@ function makeViewRatingsStudents(information) {
       current_generation.className = "datos-generation"
       // current_generation.innerText = 'Generación: ' + generation + 'Activas: ' + active + 'No Activas' + no_active;
       desercion = (no_active * 100) / (students.length)
-      current_generation.innerText = 'Generación: ' + generation + ' Activas: ' + active + ' Deserción: ' + desercion + '%';
+      var desercion1 = desercion.toFixed(2);
+      current_generation.innerText = 'Generación: ' + generation + ' Activas: ' + active + ' Deserción: ' + desercion1 + '%';
       students_generation.appendChild(current_generation);
     }
   }
