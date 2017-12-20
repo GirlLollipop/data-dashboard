@@ -18,6 +18,7 @@ function buildCheckBox(city) {
     selectores.type = 'checkbox';
     selectores.value = gen[i];
     nameGen.innerHTML = gen[i];
+    contenedorSelectet.className ='generation';
     //Le decimos donde lo cree
     menu.appendChild(contenedorSelectet);
     contenedorSelectet.appendChild(selectores);
@@ -89,11 +90,11 @@ function makeViewRatings(information) {
       chart = document.createElement('div');
       chart.innerHMTL = 'Gráfica 01';
       chart.id = 'chart' + i;
-      chart.style = 'width: 100%; height: 400px; background-color: #FFFFFF;';
+      chart.style = 'width: 50%; height:700px; background-color: #FFFFFF;';
       charts.appendChild(chart);
       AmCharts.makeChart(chart.id, {
         'type': 'pie',
-        'balloonText': '[[title]]<br><span style="font-size:14px"><b>[[value]]</b> ([[percents]]%)</span>',
+        'balloonText': '[[graficas]]<br><span style="font-size:14px"><b>[[value]]</b> ([[percents]]%)</span>',
         'titleField': 'category',
         'valueField': 'column-1',
         'allLabels': [],
