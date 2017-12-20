@@ -5,8 +5,9 @@
     <!-- enlazando el mismo css -->
     <link rel="stylesheet" href="../../css/main.css">
     <!-- Añadiendo libreria char.js para hacer gráficas -->
-    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-  <script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+    <script type="text/javascript" src="../../lib/amcharts/amcharts.js"></script>
+    <script type="text/javascript" src="../../lib/amcharts/pie.js"></script>
+    <script type="text/javascript" src="../../lib/amcharts/serial.js"></script>
     <title>AQP</title>
   </head>
   <body>
@@ -28,7 +29,7 @@
           <a class="cities" href="../AQP/aqp.html">AQP</a>  |
           <a class="cities" href="../CDMX/cdmx.html">CDMX</a>  |
           <a class="cities" href="../SCL/scl.html">SCL</a>  |
-          <a class="cities" href="../LIM/lim.html">LIM</a>  
+          <a class="cities" href="../LIM/lim.html">LIM</a>
         </div>
         <div class="options">
       <form class="" name="formOptions">
@@ -38,9 +39,13 @@
         <input type="radio" name="options" value="ratings" id="ratings">
       </form>
        </nav>
-  </div class="graphics">
-   <div id="charts">
-   </div>
+       <!-- gráficas -->
+       <section id="graficas">
+         <div class="chart2" id="students_generation"></div>
+         <div class="chart2" id="chart-sprint"></div>
+         <div class="chart2" id="charts"></div>
+       </section>
+
 
 
     <!-- enlazando la data -->
